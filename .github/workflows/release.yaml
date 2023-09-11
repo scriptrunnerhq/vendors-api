@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
+          scope: '@scriptrunnerhq'
 
       - name: Install Dependencies
         run: npm install
