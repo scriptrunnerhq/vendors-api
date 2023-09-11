@@ -2,7 +2,7 @@
 
 This library will allow you to integrate your custom field with Behaviours for ScriptRunner for Jira Data Center.
 
-This API is supported in ScripRunner for Jira since version *8.12.0*.
+This API is supported in ScriptRunner for Jira since version *8.12.0*.
 
 ## Installation
 
@@ -35,4 +35,4 @@ before applying a Behaviour.
 
 More information and an example plugin can be found in our [Documentation](https://docs.adaptavist.com/display/_PK/SR4JS/vendors-api).
 
-We also provide an [example plugin](https://github.com/scriptrunnerhq/vendours-api-example) demonstrating how this API can be used.
+We also provide an [example plugin](https://github.com/scriptrunnerhq/vendors-api-example) demonstrating how this API can be used.
