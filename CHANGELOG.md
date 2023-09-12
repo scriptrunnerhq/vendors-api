@@ -1,5 +1,11 @@
 # @scriptrunnerhq/vendors-api
 
+## 1.0.3
+
+### Patch Changes
+
+- c44bd68: Update support status in README
+
 ## 1.0.1
 
 ### Patch Changes
