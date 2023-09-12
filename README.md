@@ -2,7 +2,7 @@
 
 This library will allow you to integrate your custom field with Behaviours for ScriptRunner for Jira Data Center.
 
-This API is supported in ScriptRunner for Jira since version *8.12.0*.
+This API will be supported in ScriptRunner for Jira in an upcoming version yet to be determined.
 
 ## Installation
 
