@@ -1,5 +1,11 @@
 # @scriptrunnerhq/vendors-api
 
+## 1.0.4
+
+### Patch Changes
+
+- 2d0ca75: Release process test
+
 ## 1.0.3
 
 ### Patch Changes
