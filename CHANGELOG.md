@@ -1,5 +1,11 @@
 # @scriptrunnerhq/vendors-api
 
+## 1.0.5
+
+### Patch Changes
+
+- 3cb750b: fix getField to avoid potential runtime exceptions when using JQuery
+
 ## 1.0.4
 
 ### Patch Changes
