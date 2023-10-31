@@ -19,7 +19,7 @@ export const getVendorsApi = (
 };
 
 export const getField = (fieldId: string): JQuery<HTMLElement> =>
-  AJS.$(`#${fieldId}`);
+  AJS.$(document.getElementById(fieldId));
 
 const getApiNode = (fieldId: string): JQuery<HTMLElement> => {
   const $field = getField(fieldId);
