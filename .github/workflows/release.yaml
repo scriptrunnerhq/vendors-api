@@ -41,7 +41,7 @@ jobs:
         run: npm run build
 
       - name: Publish snapshot
-        run: npm publish --tag snapshot_2023_5_12
+        run: npm publish --tag snapshot
           
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

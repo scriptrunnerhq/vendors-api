@@ -1,6 +1,6 @@
 {
   "name": "@scriptrunnerhq/vendors-api",
-  "version": "1.0.5-snapshot",
+  "version": "1.0.5-snapshot.0",
   "browser": "./dist/index.js",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
