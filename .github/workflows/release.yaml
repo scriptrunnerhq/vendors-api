@@ -40,13 +40,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Run Changeset Version
-        run: npm run changeset version --snapshot
-
-      - name: Create Release Pull Request
-        uses: changesets/action@v1
-        with:
-          publish: npm run changeset publish --tag snapshot
+      - name: Publish snapshot
+        run: npm run changeset publish --tag snapshot_2023_5_12
           
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
