@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - snapshot
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -40,10 +40,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Run Changeset Version
+        run: npm run changeset version --snapshot snapshot
+
       - name: Create Release Pull Request
         uses: changesets/action@v1
         with:
-          publish: npm run changeset publish --provenance --access public
+          publish: npm run changeset publish --tag snapshot
+          
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN_AUTOMATION }}
