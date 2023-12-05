@@ -41,7 +41,7 @@ jobs:
         run: npm run build
 
       - name: Run Changeset Version
-        run: npm run changeset version --snapshot snapshot
+        run: npm run changeset version --snapshot
 
       - name: Create Release Pull Request
         uses: changesets/action@v1
