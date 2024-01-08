@@ -53,4 +53,5 @@ export type VendorsBehavioursApi<ValueType> = {
    * @returns {PromiseOr<void>}
    */
   setOptions?: (options: FieldOption[]) => PromiseOr<void>;
+  isValid?: () => boolean;
 };
