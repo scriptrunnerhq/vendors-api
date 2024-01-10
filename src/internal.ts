@@ -21,7 +21,7 @@ export const getVendorsApi = (
 export const getField = (fieldId: string): JQuery<HTMLElement> =>
   AJS.$(document.getElementById(fieldId));
 
-const getApiNode = (fieldId: string): JQuery<HTMLElement> => {
+export const getApiNode = (fieldId: string): JQuery<HTMLElement> => {
   const $field = getField(fieldId);
   if ($field == null || $field.attr(dataKey) === "true") {
     return $field;

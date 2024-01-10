@@ -53,5 +53,10 @@ export type VendorsBehavioursApi<ValueType> = {
    * @returns {PromiseOr<void>}
    */
   setOptions?: (options: FieldOption[]) => PromiseOr<void>;
-  isValid?: () => boolean;
+  /**
+   * Determines if the field is populated with data, to inform ScriptRunner of mandatory fields not filled in.
+   *
+   * @returns {boolean}
+   */
+  isPopulated?: () => boolean;
 };
