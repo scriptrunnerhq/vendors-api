@@ -32,9 +32,9 @@ export type VendorsBehavioursApi<ValueType> = {
   /**
    * Get current value of custom field.
    *
-   * @returns {ValueType}
+   * @returns {PromiseOr<ValueType>}
    */
-  getValue(): ValueType | null;
+  getValue(): PromiseOr<ValueType> | null;
 
   /**
    * Informs ScriptRunner Behaviours when value of custom field changes.
