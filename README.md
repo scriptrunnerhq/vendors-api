@@ -24,6 +24,7 @@ It takes two arguments:
     * `setReadOnly(readOnly)` - enables or disables the custom field based on `readOnly` boolean argument.
     * `bindOnChange(callback)` - a callback to inform ScriptRunner Behaviours that the value of the custom field has changed.
     * `setOptions(options)` - (optional) for fields like `select` provides a list of available options in the form of `{key: string, value: string}[]`.
+    * `isPopulated()` - (optional) determines if the field is populated with data, to inform ScriptRunner of mandatory fields not filled in.
 
 _Note:_ The `getValue()` and `setValue()` should be symmetric, meaning both should return/accept values in the same format.
 These values should match the data format stored in the database.
