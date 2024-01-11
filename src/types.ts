@@ -32,9 +32,9 @@ export type VendorsBehavioursApi<ValueType> = {
   /**
    * Get current value of custom field.
    *
-   * @returns {ValueType}
+   * @returns {PromiseOr<ValueType>}
    */
-  getValue(): ValueType | null;
+  getValue(): PromiseOr<ValueType> | null;
 
   /**
    * Informs ScriptRunner Behaviours when value of custom field changes.
@@ -53,4 +53,10 @@ export type VendorsBehavioursApi<ValueType> = {
    * @returns {PromiseOr<void>}
    */
   setOptions?: (options: FieldOption[]) => PromiseOr<void>;
+  /**
+   * Determines if the field is populated with data, to inform ScriptRunner of mandatory fields not filled in.
+   *
+   * @returns {boolean}
+   */
+  isPopulated?: () => boolean;
 };

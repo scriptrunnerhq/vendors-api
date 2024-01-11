@@ -5,6 +5,7 @@ import {
   storedValueKey,
   hasVendorsApi,
   getVendorsApi,
+  getApiNode,
 } from "./internal";
 
 export type {
@@ -19,6 +20,6 @@ export const DataKeys = { cfidKey, storedValueKey, apiKey };
 
 export const VendorsApi = { init };
 
-export const __internal = { hasVendorsApi, getVendorsApi };
+export const __internal = { hasVendorsApi, getVendorsApi, getApiNode };
 
 export default VendorsApi;

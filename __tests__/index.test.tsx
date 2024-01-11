@@ -18,7 +18,7 @@ const TestCustomField = () => {
       setValue: (value: string): PromiseOr<void> => {
         fieldRef.current.value = value;
       },
-      getValue: (): string => fieldRef.current.value,
+      getValue: (): PromiseOr<string> => fieldRef.current.value,
       setReadOnly: (readOnly: boolean): PromiseOr<void> => {
         fieldRef.current.readOnly = readOnly;
       },
